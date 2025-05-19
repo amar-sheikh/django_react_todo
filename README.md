@@ -1,0 +1,1 @@
+# Django + Vite(React) App
