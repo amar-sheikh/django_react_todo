@@ -2,6 +2,8 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  /* margin: 0;
+  padding: 0; */
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -25,7 +27,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -54,6 +56,24 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.form-field-group {
+  display: flex;
+  padding: 4px;
+  align-items: center;
+}
+
+.form-field-group label {
+  margin-right: 10px;
+}
+
+.item-space {
+  margin: 10px 30px;
+}
+
+.error {
+  color: red;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -63,6 +83,6 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #e7e6e6;
   }
 }
